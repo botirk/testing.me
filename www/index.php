@@ -1,3 +1,9 @@
+<?
+    $test = new Test(1);
+    if (!$test->access) {
+        echo 'Вам запрещено проходить этот тест!';
+    }
+?>
 <!doctype html>
 <html>
 <head>

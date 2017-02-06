@@ -1,7 +1,7 @@
 <?php
-	if (!isset($_FILES['json']))
-		echo json_encode(array('error' => 'Ошибка: Файл не обнаружен'));
-	elseif (!is_uploaded_file($_FILES['json']['tmp_name']))
+	if (!isset($_FILES['json'])) {
+		echo json_encode(['error' => 'Ошибка: Файл не обнаружен']);
+	} elseif (!is_uploaded_file($_FILES['json']['tmp_name']))
 		echo json_encode(array('error' => 'Ошибка: Файл не был загружен'));
 	elseif ($_FILES['json']['type'] !== 'application/json')
 		echo json_encode(array('error' => 'Ошибка: Тип файла должен быть JSON'));
