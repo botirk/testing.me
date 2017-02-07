@@ -5,7 +5,7 @@
 			$i = 0;
 			foreach($this->getQJSON()["variations"] as $variation) { 
 		?>
-			<label><input type='radio' name='<?php echo $this->getNum(); ?>'><?php echo $variation; ?></label><br>
+			<label><input type='radio' name='<?php echo $this->getNum(); ?>' value='<?php echo $i++; ?>'><?php echo $variation; ?></label><br>
 		<?php } ?>
 	</div>
 </div>

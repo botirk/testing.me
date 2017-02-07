@@ -7,7 +7,7 @@
 		<?php
 			include('../view/view_upload.php');
 			include('../utils.php');
-			(new QuestionList())->render();
+			(new TestList())->render();
 		?>
 	</blockquote>
 </body>

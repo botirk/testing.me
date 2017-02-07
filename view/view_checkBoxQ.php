@@ -5,7 +5,7 @@
 			$i = 0;
 			foreach($this->getQJSON()["variations"] as $variation) {
 		?>
-			<label><input type='checkbox' name='<?php echo $this->getNum(),'.',$i++; ?>'><?php echo $variation; ?></label><br>
+			<label><input type='checkbox' name='<?php echo $this->getNum(),'+',$i++; ?>'><?php echo $variation; ?></label><br>
 		<?php } ?>
 	</div>
 </div>
