@@ -1,4 +1,5 @@
 <?php
 	include('../utils.php');
-	echo Test::upload();
+	$fileUploader = new FileUploader();
+	echo $fileUploader->upload();
 ?>
